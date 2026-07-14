@@ -1,15 +1,184 @@
-# FastPay-Executive-Dashboard
-Interactive Microsoft Excel executive dashboard analyzing FastPay transaction performance from 2021–2025, including TTV, COGS, gross profit, margin, profitability trends, and top-performing products.
+# FastPay Digital Payment Executive Dashboard
 
-## Project Overview
-The FastPay Executive Dashboard is an interactive Microsoft Excel dashboard designed to provide a clear overview of transaction and profitability performance from 2021 to 2025.
-The dashboard helps business owners and decision-makers monitor Total Transaction Value (TTV), Cost of Goods Sold (COGS), Gross Profit, Gross Margin, Profit per Transaction, and Average Profit. It also highlights performance trends, cost and profit relationships, and the products that contribute the most gross profit.
-Users can filter the dashboard by year to compare business performance across different periods and identify important changes in transaction value and profitability.
+A pivot-based Microsoft Excel dashboard designed to provide a high-level overview of business performance for a digital payment and transaction-based business.
 
-## Key Business Insights
-* FastPay’s transaction performance declined consistently from 2021 to 2025, indicating a significant reduction in overall business activity.
-* Utilities generated the highest Total Transaction Value (TTV), making it the largest contributor to transaction value.
-* Telecommunications recorded the highest transaction volume, showing that customers used these services more frequently than other categories.
-* Mobile Airtime Top Up generated a stronger gross margin compared with several products that had higher transaction values.
-* Electricity Bill Payment produced the highest transaction value, but its relatively low margin shows that high transaction value does not always result in high profitability.
-* The results indicate that management should evaluate both transaction value and profit margin when deciding which products to prioritize.
+This portfolio project transforms transaction-level data from 2021 to 2025 into an interactive one-screen executive report using Excel PivotTables, KPI cards, a Year Slicer, summarized chart data, and Excel charts.
+
+![FastPay Executive Dashboard](images/fastpay-executive-dashboard.png)
+
+## Project Objective
+
+The dashboard was created to help business owners and decision-makers quickly understand:
+
+* How much total transaction value is processed
+* How much Gross Profit is generated
+* Whether the overall Gross Margin is healthy
+* How many transactions are completed
+* What the average value of each transaction is
+* Which business category records the highest transaction activity
+* How transaction value changes over multiple years
+* Which products and categories contribute the most transaction value
+
+The dashboard is designed as a one-screen executive overview so users can understand the most important business information without scrolling through a long report.
+
+## Dashboard Features
+
+* Interactive Year Slicer
+* Six dynamic executive KPI cards
+* PivotTable-based calculations and data summaries
+* One-screen dashboard layout without vertical scrolling
+* Five-year Transaction Value trend
+* Monthly Transaction Value and Gross Profit comparison
+* Dynamic Top 5 Products by Transaction Value
+* Transaction Value analysis by category
+* Connected PivotTables and dashboard visuals
+* Custom number formatting for large financial values
+* Consistent dashboard colors and visual hierarchy
+* Dashboard Guide for external users
+
+## Main KPIs
+
+* Total Transaction Value
+* Total Gross Profit
+* Gross Margin %
+* Total Transactions
+* Average Transaction Value
+* Most Active Category
+
+The Year Slicer updates the connected KPI values and dashboard visuals according to the selected reporting period.
+
+The five-year trend chart provides additional historical context for evaluating the long-term direction of transaction performance.
+
+## Main Dashboard Charts
+
+### 1. Five-Year Transaction Value Trend
+
+Shows the overall movement of Transaction Value from 2021 to 2025 and helps users identify periods of business growth or decline.
+
+### 2. Monthly Transaction Value and Gross Profit
+
+Compares monthly Transaction Value with Gross Profit to help users understand whether higher transaction activity also produces higher profitability.
+
+### 3. Top 5 Products by Transaction Value
+
+Identifies the products that contribute the highest total Transaction Value during the selected reporting period.
+
+### 4. Transaction Value by Category
+
+Shows how total Transaction Value is distributed across the main business categories.
+
+## Excel Functions and Features Used
+
+* PivotTables
+* PivotTable Filters
+* Slicer and Report Connections
+* Excel Tables
+* KPI Reference Cells
+* Structured Source Data
+* Excel Charts
+* Combo Column-Line Chart
+* Line Chart
+* Horizontal Bar Chart
+* Category Comparison Chart
+* Dynamic Data Labels
+* Custom Number Formatting
+* Dashboard Shapes and KPI Cards
+* Conditional Formatting
+* Dashboard Guide Documentation
+
+## Workbook Structure
+
+* **Dashboard Guide** — Explanation of the project, controls, KPIs, charts, and dashboard usage
+* **Dashboard** — Main one-screen executive dashboard
+* **KPI** — Pivot-based KPI calculations and dashboard reference cells
+* **Chart** — PivotTables, summarized chart sources, and supporting calculations
+* **Dataset** — Transaction-level source data
+
+## Dataset Overview
+
+* Period: 2021–2025
+* Granularity: One row per transaction
+* Number of transactions: 2,885
+* Number of products: 11
+* Number of categories: 5
+* Main fields:
+
+  * Transaction Date
+  * Service Code
+  * Customer ID
+  * Category
+  * Product
+  * Customer
+  * COGS
+  * Transaction Value
+  * Gross Profit
+  * Year
+  * Month
+
+Customer names are anonymized, and Customer IDs are masked to protect personal information.
+
+## Analysis Logic
+
+* `Gross Profit = Transaction Value − COGS`
+* `Gross Margin % = Gross Profit ÷ Transaction Value`
+* `Average Transaction Value = Total Transaction Value ÷ Total Transactions`
+* Total Transactions are calculated by counting transaction-level records
+* Most Active Category is identified based on the highest number of transactions
+* Product rankings are based on total Transaction Value
+* Monthly performance is summarized by Year and Month
+* The Year Slicer filters connected PivotTables and dashboard components
+
+## Business Questions Answered
+
+This dashboard helps users answer:
+
+* What is the overall value of transactions processed?
+* How much Gross Profit is generated from the transaction activity?
+* What is the overall Gross Margin?
+* How many transactions are completed?
+* What is the average value of each transaction?
+* Which category has the highest transaction activity?
+* Is Transaction Value increasing or declining over time?
+* Which months generate the highest Transaction Value and Gross Profit?
+* Which products contribute the highest Transaction Value?
+* Which categories contribute the most to overall business activity?
+
+## Business Insights Supported
+
+This dashboard can help users:
+
+* Monitor high-level business performance
+* Compare performance across different years
+* Identify long-term Transaction Value trends
+* Evaluate the relationship between Transaction Value and Gross Profit
+* Identify the strongest-performing products
+* Understand Transaction Value contribution by category
+* Detect periods of increasing or decreasing business activity
+* Distinguish transaction volume from financial performance
+* Support management discussions using a concise executive view
+
+## Skills Demonstrated
+
+* Excel executive dashboard design
+* PivotTable-based reporting
+* KPI development
+* Transaction data analysis
+* Business performance analysis
+* Product performance analysis
+* Category contribution analysis
+* Interactive Slicer implementation
+* PivotTable and chart connection management
+* One-screen dashboard layout
+* Excel chart creation and formatting
+* Financial metric calculation
+* Data anonymization
+* Dashboard documentation
+* Business-focused data presentation
+
+## Important Note
+
+This is a portfolio project created to demonstrate Microsoft Excel dashboard, PivotTable, data-analysis, and business-reporting skills.
+
+It should not be interpreted as a real-client financial report or as evidence of actual business performance improvement.
+
+The project does not include VBA, macros, Power Query, SQL, Python, Power BI, external database connections, or automated data refresh.
