@@ -4,7 +4,6 @@ A pivot-based Microsoft Excel dashboard designed to provide a high-level overvie
 
 This portfolio project transforms transaction-level data from 2021 to 2025 into an interactive one-screen executive report using Excel PivotTables, KPI cards, a Year Slicer, summarized chart data, and Excel charts.
 
-![FastPay Executive Dashboard](images/fastpay-executive-dashboard.png)
 
 ## Project Objective
 
